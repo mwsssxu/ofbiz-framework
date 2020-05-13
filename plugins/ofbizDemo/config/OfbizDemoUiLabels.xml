@@ -63,6 +63,10 @@ under the License.
         <value xml:lang="en">find demo title</value>
         <value xml:lang="zh">demo搜索</value>
     </property>
+    <property key="OfbizDemoAdd">
+        <value xml:lang="en">add demo title</value>
+        <value xml:lang="zh">新增demo</value>
+    </property>
     <property key="OfbizDemoType">
         <value xml:lang="en">type</value>
         <value xml:lang="zh">类型</value>

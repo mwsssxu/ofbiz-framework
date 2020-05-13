@@ -212,8 +212,8 @@ dependencies {
     runtimeOnly 'org.apache.logging.log4j:log4j-jul:2.13.1' // for external jars using the java.util.logging: routes logging to log4j 2
     runtimeOnly 'org.apache.logging.log4j:log4j-slf4j-impl:2.13.1' // for external jars using slf4j: routes logging to log4j 2
     runtimeOnly 'org.codeartisans.thirdparties.swing:batik-all:1.8pre-r1084380'
-    // https://mvnrepository.com/artifact/postgresql/postgresql
-    compile 'postgresql:postgresql:9.1-901-1.jdbc4'
+    // https://mvnrepository.com/artifact/org.postgresql/postgresql
+    compile 'org.postgresql:postgresql:42.2.12'
     // https://mvnrepository.com/artifact/mysql/mysql-connector-java
     compile 'mysql:mysql-connector-java:8.0.20'
 

@@ -73,5 +73,6 @@ under the License.
     <!-- View Mapping -->
     <view-map name="FindOfbizDemo" type="screen" page="component://ofbizDemo/widget/OfbizDemoScreens.xml#FindOfbizDemo"/>
 
+    <view-map name="CreateOfbizDemo" type="screen" page="component://ofbizDemo/widget/OfbizDemoScreens.xml#FindOfbizDemo"/>
 
 </site-conf>
