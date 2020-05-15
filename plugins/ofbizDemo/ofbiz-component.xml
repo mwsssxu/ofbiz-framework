@@ -50,4 +50,6 @@ under the License.
         location="webapp/ofbizDemo"
         base-permission="OFBTOOLS,OFBIZDEMO"
         mount-point="/ofbizDemo"/>
+
+
 </ofbiz-component>

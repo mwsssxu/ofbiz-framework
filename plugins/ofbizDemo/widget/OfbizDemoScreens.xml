@@ -37,9 +37,28 @@ under the License.
 
                 <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
                     <decorator-section name="body">
-<!--                        <screenlet title="add ofbiz demo" name="AddOfbizDemo">-->
-<!--                            <include-form name="AddOfbizDemo" location="component://ofbizDemo/widget/OfbizDemoForms.xml"/>-->
-<!--                        </screenlet>-->
+
+                        <screenlet title="${uiLabelMap.OfbizDemoAdd}" name="AddOfbizDemo">
+                            <include-form name="AddOfbizDemo" location="component://ofbizDemo/widget/OfbizDemoForms.xml"/>
+                        </screenlet>
+
+                    </decorator-section>
+                </decorator-screen>
+
+            </widgets>
+        </section>
+    </screen>
+
+    <screen name="FindOfbizDemo">
+        <section>
+            <actions>
+                <set field="headerItem" value="findOfbizDemo"/>
+                <set field="titleProperty" value="PageTitleFindOfbizDemo"/>
+                <set field="ofbizDemoCtx" from-field="parameters"/>
+            </actions>
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
                         <section>
                             <condition>
                                 <if-has-permission permission="OFBIZDEMO" action="_VIEW"/>
@@ -60,7 +79,6 @@ under the License.
                         </section>
                     </decorator-section>
                 </decorator-screen>
-
             </widgets>
         </section>
     </screen>

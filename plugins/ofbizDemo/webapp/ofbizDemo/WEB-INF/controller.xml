@@ -48,17 +48,17 @@ under the License.
     <!-- Request Mappings -->
     <request-map uri="main"><security https="true" auth="true"/><response name="success" type="view" value="main"/></request-map>
 
-<!--    <request-map uri="createDemo">-->
-<!--        <security https="false" auth="true"/>-->
-<!--        <event type="service" invoke="createDemo"/>-->
-<!--        <response name="success" type="view" value="main"/>-->
-<!--    </request-map>-->
-
     <request-map uri="createDemo">
         <security https="false" auth="true"/>
-        <event type="service" invoke="createOfbizDemoByJavaService"/>
+        <event type="service" invoke="createDemo"/>
         <response name="success" type="view" value="main"/>
     </request-map>
+
+<!--    <request-map uri="createDemo">-->
+<!--        <security https="false" auth="true"/>-->
+<!--        <event type="service" invoke="createOfbizDemoByJavaService"/>-->
+<!--        <response name="success" type="view" value="main"/>-->
+<!--    </request-map>-->
 
     <request-map uri="createOfbizDemoEvent">
         <security https="false" auth="true"/>
@@ -73,6 +73,5 @@ under the License.
     <!-- View Mapping -->
     <view-map name="FindOfbizDemo" type="screen" page="component://ofbizDemo/widget/OfbizDemoScreens.xml#FindOfbizDemo"/>
 
-    <view-map name="CreateOfbizDemo" type="screen" page="component://ofbizDemo/widget/OfbizDemoScreens.xml#FindOfbizDemo"/>
 
 </site-conf>
